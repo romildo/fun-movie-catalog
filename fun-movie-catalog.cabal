@@ -1,0 +1,72 @@
+-- movie-catalog.cabal
+
+name:                fun-movie-catalog
+version:             0.1
+synopsis:            Movie collection management system
+description:         An application to manage movie collections
+license:             ISC
+license-file:        LICENSE
+author:              José Romildo Malaquias
+maintainer:          malaquias@gmail.com
+category:            Multimedia
+
+build-type:          Simple
+
+extra-source-files:  README TODO
+
+cabal-version:       >=1.10
+
+
+executable fun-movie-catalog
+  -- .hs or .lhs file containing the Main module.
+  main-is:           Gui.hs
+  hs-source-dirs:    src
+
+  -- Packages needed in order to build this package.
+  build-depends:     ConfigFile
+                   , HTTP
+                   , MissingH
+                   , ansi-terminal
+                   , array
+                   , base
+                   , blaze-html
+                   , blaze-markup
+                   , bytestring
+                   , containers
+                   , directory
+                   , edit-distance
+                   , encoding
+                   , filepath
+                   , glib
+                   , gtk
+                   , iconv
+                   , mtl
+                   , network
+                   , network-uri >= 2.6.0.3
+                   , parsec >= 3.1
+                   , process
+                   , regex-base
+                   , regex-pcre
+                   , regex-tdfa
+                   , split
+                   , tagsoup
+                   , text
+                   , time
+                   , utf8-string
+                   , webkit
+                   , zlib
+
+  -- Modules not exported by this package.
+  -- other-modules:       
+
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- build-tools:         
+
+  default-language:  Haskell2010
+  
+  ghc-options:       -threaded
+                     -Wall
+                     -fno-warn-unused-do-bind
+                     -fno-warn-unused-binds
+                     -fno-warn-name-shadowing
+
