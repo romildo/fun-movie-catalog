@@ -17,3 +17,11 @@ cabal.sandbox.config
 *.eventlog
 .stack-work/
 cabal.project.local
+cache
+images
+*.tex
+*.catalog
+*.txt
+*.css
+*.html
+*.js
